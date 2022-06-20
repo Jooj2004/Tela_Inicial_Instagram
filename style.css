@@ -14,12 +14,14 @@ body{
 }
 
 .fundo{
+	position: relative;
     display: flex;
     height: 100vh;
     width: 90%;
 }
 
 .celular{
+	position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +38,7 @@ body{
 }
 
 .informacoes{
+	position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -121,23 +124,10 @@ body{
 
 @media (max-width: 620px) {
     .celular{
-        opacity: 0;
-        z-index: -1;
+        display: none;
     } 
     .informacoes{
         position: absolute;
         transform: translate(50%, 50%);
-    }
-}
-
-@media (min-width: 1000px) {
-    .celular{
-        position: relative;
-        transform: translate(0%, 0%);
-    }
-    
-    .informacoes{
-        position: relative;
-        transform: translate(0%, 0%);
     }
 }
